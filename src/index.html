@@ -5,13 +5,262 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind css</title>
+    <title>Agency</title>
     <!-- Tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <!-- code -->
+
+    <header class="header">
+        <div class="container mx-auto">
+            <nav class="nav flex justify-between py-12">
+                <a href="./index.html" class="nav__logo">
+                    <img src="./images/Logo.svg" alt="site logo" class="nav__logo-img">
+                </a>
+                <ul class="nav__list flex justify-between w-1/4">
+                    <li class="nav__list--item">
+                        <a href="#" class="nav__list--item-link text-[#303948] text-[16px] font-medium leading-6 hover:text-[#30394876]">About</a>
+                    </li>
+                    <li class="nav__list--item">
+                        <a href="#" class="nav__list--item-link text-[#303948] text-[16px] font-medium leading-6 hover:text-[#30394876]">Services</a>
+                    </li>
+                    <li class="nav__list--item">
+                        <a href="#" class="nav__list--item-link text-[#303948] text-[16px] font-medium leading-6 hover:text-[#30394876]">Client</a>
+                    </li>
+                    <li class="nav__list--item">
+                        <a href="#" class="nav__list--item-link text-[#303948] text-[16px] font-medium leading-6 hover:text-[#30394876]">Blog</a>
+                    </li>
+                    <li class="nav__list--item">
+                        <a href="#" class="nav__list--item-link text-[#303948] text-[16px] font-medium leading-6 hover:text-[#30394876]">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="intro">
+            <div class="container m-auto">
+                <div class="intro__inner relative border px-[76px] py-[216px] bg-[url('./images/Background.jpg')] bg-no-repeat bg-cover rounded-[35px]">
+                    <div class="intro__info w-[471px]">
+                        <h1 class="intro__info-title font-bold text-[50px] leading-[71px] text-white">Go digital with us</h1>
+                        <p class="intro__info-text mt-5 mb-8 font-normal text-lg leading-7 text-white">We have designed hundreds of websites and helped improve their online performance through SEO, SEM and Social Media Marketing</p>
+                        <a href="#" class="intro__info-link inline-block bg-[#FAFAFA] rounded-[35px] text-2xl leading-8 font-medium text-[#303948] py-5 px-14 hover:bg-slate-300">See Portofolio</a>
+                    </div>
+                    <img src="./images/busines.png" alt="Busines" class="intro__img absolute bottom-0 right-0 rounded-b-[35px]">
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container mx-auto px-[110px]">
+                <div class="about__inner shadow-2xl mx-auto relative bottom-[83px]  py-[97px] px-[65px] bg-[#14213D]  rounded-[35px] bg-[url('./images/about_bg.svg')] bg-no-repeat bg-cover">
+                    <div class="about__info">
+                        <h2 class="about__info-title font-medium text-4xl leading-[51px] text-white">We are experienced</h2>
+                        <p class="about__info-text mt-7 text-xl leading-[26px] font-normal text-white">
+                            We have been around for a long time since 2010, thousands of products have been created, we are always here to provide new innovations for you
+                        </p>
+                        <button class="about__info-btn mt-1 rounded-full p-2 absolute right-[66px] hover:bg-slate-300 ">
+                            <img src="./images/Arrow.svg" alt="next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="client">
+            <div class="container mx-auto">
+                <div class="client__inner">
+                    <div class="client__info">
+                        <h2 class="client__info-title font-medium text-[36px] leading-[51px] text-center">Client</h2>
+                        <p class="client__info-text text-lg leading-[26px] text-center mt-6 mb-14">Using Our Experience To Make Your Digital Experience Brighter</p>
+                        <div class="client__info--logo flex justify-center items-center gap-7">
+                            <img src="./images/microsoft.svg" alt="microsoft" class="client__info--logo-img">
+                            <img src="./images/google.svg" alt="google" class="client__info--logo-img">
+                            <img src="./images/amazon.svg" alt="amazon" class="client__info--logo-img mt-3">
+                        </div>
+                    </div>
+                    <div class="client__bottom relative mt-28 flex">
+                        <img src="./images/Dot.svg" alt="dot" class="absolute left-[400px] top-[-40px]">
+                        <img src="./images/Frame.png" alt="Frame" class="client__bottom-img  rounded-[35px]">
+                        <div class="client__bottom__right w-[615px] ml-24 mt-7">
+                            <p class="client__bottom__right-text text-lg font-normal leading-[26px] text-[#303948]">Who We Help</p>
+                            <h3 class="client__bottom__right-title my-4 font-medium text-[36px] leading-[51px]">Specific challenges require specific solutions</h3>
+                            <p class="client__bottom__right-text text-lg font-normal leading-[26px] text-[#59616D]">Some of the industries our digital agency specialises in</p>
+
+                            <div class="client__bottom__grid mt-20 gap-24 grid grid-cols-2 grid-rows-2">
+                                <div class="client__bottom__grid--card w-[220px] relative">
+                                    <img src="./images/card1.svg" alt="card img" class="absolute left-[-5px] top-[-24px]">
+                                    <h4 class="client__bottom__grid--card-title ml-16 text-base leading-[23px] font-medium text-[#303948]">Web & Mobile Apps</h4>
+                                    <p class="client__bottom__grid--card-text mt-7 text-lg font-normal leading-[26px] text-[#59616D]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div class="client__bottom__grid--card w-[220px] relative">
+                                    <img src="./images/card2.svg" alt="card img" class="absolute left-[-5px] top-[-24px]">
+                                    <h4 class="client__bottom__grid--card-title ml-16 text-base leading-[23px] font-medium text-[#303948]">Design Services</h4>
+                                    <p class="client__bottom__grid--card-text mt-7 text-lg font-normal leading-[26px] text-[#59616D]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div class="client__bottom__grid--card w-[220px] relative">
+                                    <img src="./images/card3.svg" alt="card img" class="absolute left-[-5px] top-[-24px]">
+                                    <h4 class="client__bottom__grid--card-title ml-16 text-base leading-[23px] font-medium text-[#303948]">SEO</h4>
+                                    <p class="client__bottom__grid--card-text mt-7 text-lg font-normal leading-[26px] text-[#59616D]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div class="client__bottom__grid--card w-[220px] relative">
+                                    <img src="./images/card4.svg" alt="card img" class="absolute left-[-5px] top-[-24px]">
+                                    <h4 class="client__bottom__grid--card-title ml-16 text-base leading-[23px] font-medium text-[#303948]">Security Tester</h4>
+                                    <p class="client__bottom__grid--card-text mt-7 text-lg font-normal leading-[26px] text-[#59616D]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work mt-44">
+            <div class="container mx-auto">
+                <div class="work__inner flex justify-between items-center">
+                    <div class="work__info w-[485px]">
+                        <h2 class="work__info-title font-medium text-[36px] leading-[51px] text-[#303948]">How does our process work?</h2>
+                        <p class="work__info-text text-lg leading-[26px] text-[#59616D] mt-14 mb-20">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="#" class="work__info-link bg-[#14213D] rounded-[35px] text-2xl leading-8 font-medium text-[#FAFAFA] py-5 px-14 hover:bg-[#14213d8b]">See Details</a>
+                    </div>
+                    <div class="work__right relative grid grid-cols-2 grid-rows-2 gap-6">
+                        <div class="work__right--card w-[250px]"><img src="./images/work1.png" alt="card img" class="work__right--card-img"></div>
+                        <div class="work__right--card w-[250px]"><img src="./images/work2.png" alt="card img" class="work__right--card-img"></div>
+                        <div class="work__right--card w-[250px]"><img src="./images/work3.png" alt="card img" class="work__right--card-img"></div>
+                        <div class="work__right--card w-[250px]"><img src="./images/work4.png" alt="card img" class="work__right--card-img"></div>
+                        <img src="./images/Ellipse2.svg" alt="ellipse" class="absolute right-[-30px] top-[-30px]">
+                        <img src="./images/Ellipse.svg" alt="ellipse" class="absolute left-[-50px] top-[350px]">
+                        <img src="./images/Dot2.svg" alt="dot" class="absolute bottom-[-70px] right-[-30px] -z-10">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product mt-[200px]">
+            <div class="container mx-auto">
+                <div class="product__inner">
+                    <div class="product__info relative">
+                        <p class="product__info-text text-lg leading-[26px] text-[#303948]">Our Product</p>
+                        <h2 class="product__info-title my-4 font-medium text-[36px] leading-[51px] text-[#14213D]">We’ll let our work speak for itself</h2>
+                        <p class="product__info-text text-lg leading-[26px] text-[#59616D]">Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                        <div class="btn__box flex items-center gap-10 absolute right-0 bottom-0">
+                            <button class="w-20 h-20 bg-[#14213D] rounded-[35px] flex items-center justify-center hover:bg-[rgba(73,73,73,0.5)]">
+                                <img src="./images/nm.svg" alt="next">
+                            </button>
+                            <button class="w-20 h-20 bg-[#14213D] rounded-[35px] flex items-center justify-center hover:bg-[rgba(73,73,73,0.5)]">
+                                <img src="./images/np.svg" alt="next">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product__bottom mt-24 flex items-center justify-between gap-28">
+                        <div class="product__bottom--card flex flex-col justify-center items-center">
+                            <img src="./images/card1.jpg" alt="card img" class="product__bottom--card">
+                            <h2 class="product__bottom--card-title mt-9 mb-4 font-medium text-[36px] leading-[51px] text-[#14213D]">PT. ABCDE</h2>
+                            <p class="product__bottom--card-text text-lg leading-[26px] text-[#59616D]">Web Development</p>
+                            <a href="#" class="product__bottom--card-link mt-9 inline-block bg-[#14213D] rounded-[35px] text-2xl leading-8 font-medium text-[#FAFAFA] py-5 px-16 hover:bg-[#14213d8b]">See Details</a>
+                        </div>
+                        <div class="product__bottom--card flex flex-col justify-center items-center">
+                            <img src="./images/card2.jpg" alt="card img" class="product__bottom--card">
+                            <h2 class="product__bottom--card-title mt-9 mb-4 font-medium text-[36px] leading-[51px] text-[#14213D]">SEO</h2>
+                            <p class="product__bottom--card-text text-lg leading-[26px] text-[#59616D]">Rose Wood</p>
+                            <a href="#" class="product__bottom--card-link mt-9 inline-block bg-[#14213D] rounded-[35px] text-2xl leading-8 font-medium text-[#FAFAFA] py-5 px-16 hover:bg-[#14213d8b]">See Details</a>
+                        </div>
+                        <div class="product__bottom--card flex flex-col justify-center items-center">
+                            <img src="./images/card3.jpg" alt="card img" class="product__bottom--card">
+                            <h2 class="product__bottom--card-title mt-9 mb-4 font-medium text-[36px] leading-[51px] text-[#14213D]">Presentation Template</h2>
+                            <p class="product__bottom--card-text text-lg leading-[26px] text-[#59616D]">CoSpace</p>
+                            <a href="#" class="product__bottom--card-link mt-9 inline-block bg-[#14213D] rounded-[35px] text-2xl leading-8 font-medium text-[#FAFAFA] py-5 px-16 hover:bg-[#14213d8b]">See Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="test mt-[225px]">
+            <div class="container mx-auto">
+                <div class="test__inner relative flex items-center justify-between">
+                    <img src="./images/Rectangle.png" alt="img" class="test__img">
+                    <img src="./images/Ellipse2.svg" alt="style" class="absolute top-[400px] left-[360px]">
+                    <img src="./images/style.svg" alt="style" class="absolute left-[-40px] -z-10">
+                    <img src="./images/Dot2.svg" alt="style" class="top-[-70px] left-[300px] absolute -z-10">
+                    <div class="test__info w-[625px]">
+                        <h2 class="test__info-title font-medium text-[36px] leading-[51px] text-[#14213D]">Testimonials by them</h2>
+                        <p class="test__info-text mt-5 text-2xl leading-[34px] text-[#59616D]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <strong>-Joe Z</strong>
+                        </p>
+                        <div class="btn__box flex items-center gap-10 absolute right-0 bottom-0">
+                            <button class="w-20 h-20 bg-[#14213D] rounded-[35px] flex items-center justify-center hover:bg-[rgba(73,73,73,0.5)]">
+                                <img src="./images/nm.svg" alt="next">
+                            </button>
+                            <button class="w-20 h-20 bg-[#14213D] rounded-[35px] flex items-center justify-center hover:bg-[rgba(73,73,73,0.5)]">
+                                <img src="./images/np.svg" alt="next">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer mt-28 mb-4">
+        <div class="container mx-auto">
+            <div class="footer__inner relative flex items-start justify-between px-6 pt-20 pb-4 bg-[url('./images/footer.png')] bg-no-repeat bg-cover rounded-[35px]">
+                <div class="footer__box">
+                    <a href="./index.html" class="">
+                        <img src="./images/footer_logo.svg" alt="Logo">
+                    </a>
+                    <p class="footer__box-text mt-7 text-lg leading-[26px] text-[#14213D]">
+                        Go digital with us
+                    </p>
+                    <address class=" mt-7 text-lg leading-[26px] text-[#14213D]"> 50 Raya Building </address>
+                    <a href="tel:+123456789" class="footer__box-text block  text-lg leading-[26px] text-[#14213D] hover:text-[#14213d8c]">
+                        Call us: 123-456-678
+                    </a>
+                    <img src="./images/Dot4.svg" alt="style" class="absolute top-[300px] left-[-30px] w-20">
+                    <img src="./images/style1.svg" alt="style" class="absolute bottom-0 right-0">
+                    <img src="./images/style2.svg" alt="style" class="absolute right-[165px] bottom-12">
+                    <img src="./images/style3.svg" alt="style" class="absolute top-16 right-16">
+                    <img src="./images/Dot3.svg" alt="style" class="absolute top-24 right-3">
+                    <p class="text-lg mt-40 leading-[26px] text-[#14213D]">Copyright © 2021 Steelthemes. All Rights Reserved.</p>
+                </div>
+                <div class="footer__nav w-1/4 mr-[170px] flex items-start justify-between">
+                    <ul class="footer__list relative">
+                        <strong class="footer__list-title font-bold text-xl leading-7">Company</strong>
+                        <li class="footer__list--item mt-5">
+                            <a href="#" class="footer__list--item-link text-xl leading-7 text-[#14213D] hover:text-[#14213d8c]">About</a>
+                        </li>
+                        <li class="footer__list--item mt-5">
+                            <a href="#" class="footer__list--item-link text-xl leading-7 text-[#14213D] hover:text-[#14213d8c]">Blog</a>
+                        </li>
+                        <li class="footer__list--item mt-5">
+                            <a href="#" class="footer__list--item-link text-xl leading-7 text-[#14213D] hover:text-[#14213d8c]">Gallery</a>
+                        </li>
+                        <li class="footer__list--item mt-5">
+                            <a href="#" class="footer__list--item-link text-xl leading-7 text-[#14213D] hover:text-[#14213d8c]">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <strong class="footer__list-title font-bold text-xl leading-7">Social Media</strong>
+                        <li class="footer__list--item mt-5">
+                            <a href="https://facebook.com" class="footer__list--item-link text-xl leading-7 text-[#14213D] hover:text-[#14213d8c]">Facebook</a>
+                        </li>
+                        <li class="footer__list--item mt-5">
+                            <a href="https://instagram.com" class="footer__list--item-link text-xl leading-7 text-[#14213D] hover:text-[#14213d8c]">Instagram</a>
+                        </li>
+                        <li class="footer__list--item mt-5">
+                            <a href="https://twitter.com" class="footer__list--item-link text-xl leading-7 text-[#14213D] hover:text-[#14213d8c]">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
